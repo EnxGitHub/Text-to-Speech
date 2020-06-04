@@ -1,6 +1,5 @@
 from gtts  import gTTS
 import os
-import time
 from playsound import playsound
 while True:
     language = "en"
@@ -10,7 +9,6 @@ while True:
         print("Please enter a valid language!")
         continue
 
-while True:
     mytext = str(input("\nPlease enter a text:\t"))
     output = gTTS(text=mytext,lang=language,slow=False)
     output.save("output.mp3")
